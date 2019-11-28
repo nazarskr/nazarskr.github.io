@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: DS-Digital Normal;
+    src: url(fonts/DS-DIGI.ttf);
+}
+body {
+    width: 100%;
+    background-color: black;
+    color: aqua;
+    font-family: DS-Digital Normal;
+}
+.container {
+    height: 650px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.section {
+    width: 100%;
+    height: 200px;
+    border: 1px solid aqua;
+}
+/*buttons*/
+input[type="button"] {
+    border: 1px solid aqua;
+    border-radius: 3px;
+    color: aqua;
+    background-color: black;
+    width: 60px;
+    height: 25px;
+}
+#timer-adjust > input[type="button"] {
+    width: 25px;
+}
+/*clock*/
+#upper {
+    padding: 40px;
+}
+#current-time {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+#date {
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+#clock, #timer-number, #timer-value{
+    font-size: 90px;
+}
+#middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+#loop-value {
+    width: 250px;
+    height: 150px;
+    border: 1px solid grey;
+}
+/*stopwatch*/
+#stopwatch {
+    width: 500px;
+    height: 200px;
+    position: relative;
+}
+#stopwatch-value {
+    font-size: 70px;
+    position: absolute;
+    top: 20%;
+    left: 250px;
+    transform: translate(-178px, 0); /*вручну, бо при флексі "ковбасить"*/
+}
+#stopwatch-control {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#stopwatch-control > * {
+    margin: 5px;
+}
+#loop-value {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+#loop-value > * {
+    margin: 4px;
+}
+/*timer*/
+#lower {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#timerset {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+#timer-adjust > *{
+    margin: 5px;
+}
+#timer-value {
+    text-align: center;
+}
+#timer-control {
+    display: flex;
+    justify-content: center;
+}
+#timer-control > * {
+    margin: 5px;
+}

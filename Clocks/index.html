@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>clock/timer/stopwatch</title>
+</head>
+<body>
+    <div class="container">
+        <div id="upper" class="section">
+            <div id="current-time">
+                <div id="date" class="date"></div>
+                <div id="clock" class="clock"></div>
+            </div>
+        </div>
+        <div id="middle" class="section">
+            <div id="stopwatch">
+                <div id="stopwatch-value"></div>
+                <div id="stopwatch-control">
+                    <input type="button" id="stopwatch-start" value="START">
+                    <input type="button" id="stopwatch-loop" value="LOOP">
+                    <input type="button" id="stopwatch-stop" value="STOP">
+                    <input type="button" id="stopwatch-reset" value="RESET">
+                </div>
+            </div>
+            <div id="loop-value"></div>
+        </div>
+        <div id="lower" class="section">
+            <div id="timerset">
+                <div id="timer-number">04</div>
+                <div id="minutes">MINUTES</div>
+                <div id="timer-adjust">
+                    <input type="button" id="plus" value="+">
+                    <input type="button" id="minus" value="-">
+                </div>
+            </div>
+            <div id="timer">
+                <div id="timer-value">00:00</div>
+                <div id="timer-control">
+                    <input type="button" id="timer-start" value="START">
+                    <input type="button" id="timer-stop" value="STOP">
+                    <input type="button" id="timer-reset" value="RESET">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
