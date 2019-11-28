@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    overflow: visible;
+}
+/* header */
+#header {
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#word {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+}
+#word input[type='button']{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#word > * {
+    margin: 4px;
+    border-radius: 4px;
+}
+#edit, #lock {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+}
+#fontstyle, #align, #other-edit {
+    height: 32px;
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+#fontstyle {
+    width: 128px;
+}
+#align {
+    width: 96px;
+}
+/*buttons*/
+#edit-button {
+    background: url('images/html-tag.png');
+}
+#bold {
+    background: url('images/bold.png');
+}
+#italic {
+    background-image: url('images/italic.png');
+}
+#underline {
+    background-image: url('images/underlined.png');
+}
+#deleted {
+    background-image: url('images/strikethrough-text.png');
+}
+#left {
+    background: url('images/alignleft.png');
+}
+#center {
+    background-image: url('images/aligncenter.png');
+}
+#right {
+    background-image: url('images/alignright.png');
+}
+#font-family {
+    background-image: url('images/font-family.png');
+}
+#dropdown-menu1 > li {
+    background: white;
+    color: black;
+}
+#dropdown-menu1 {
+    min-width: 100px;
+    text-align: center;
+}
+#dropdown-menu1 > li:hover {
+    color: white;
+    background: grey;
+    text-decoration: none;
+}
+#font-size {
+    background-image: url('images/font-size.png');
+}
+#dropdown-menu2 {
+    min-width: 50px;
+    text-align: center;
+}
+#dropdown-menu2 > li {
+    background: white;
+    color: black;
+}
+#dropdown-menu2 > li:hover {
+    color: white;
+    background: grey;
+    text-decoration: none;
+}
+#font-size, #font-family {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: none;
+}
+#background-color {
+    background-image: url('images/painter-palette.png');
+}
+#background-image {
+    background-image: url('images/insert-picture.png');
+}
+#lock-button {
+    background-image: url('images/padlock-unlock.png');
+}
+#editorium {
+    width: 128px;
+    height: 32px;
+    background-color: white;
+    border-radius: 4px;
+    display: none;
+    flex-flow: row;
+    align-items: center;
+}
+#editorium input[type='button'] {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#save {
+    background-image: url('images/save.png');
+}
+#add-table {
+    background-image: url('images/table.png');
+}
+#add-ol {
+    background-image: url('images/olist.png');
+}
+#add-ul {
+    background-image: url('images/ulist.png');
+}
+/* main */
+main {
+    margin-top: 70px;
+}
+#result {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+}
+#result > * {
+    margin-bottom: 20px;
+} 
+#editor {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+#textarea {
+    width: 100vw;
+    height: 100vh;
+    display: none;  
+}
+/*modals*/
+/*modal buttons*/
+#reset-olist, #reset-ulist, #reset-table{
+    background: red;
+}
+#create-olist, #create-ulist, #create-table{
+    background: green;
+}
+/*palette*/
+#paletteMOD .modal-dialog {
+    width: 440px;
+    display: flex;
+    justify-content: center;
+}
+#paletteMOD .modal-dialog .modal-content {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+#palette-mod {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+}
+.nav-tabs, .tab-content {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+}
+.palette {
+    width: 380px;
+    height: 166px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.palette div {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    border-radius: 5px;
+}
+.images-palette {
+    width: 330px;
+    height: 165px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.images-palette div {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+}
+/*sign in*/
+#signIN .modal-dialog {
+    width: 500px;
+}
+#signin-mod {
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+#sign-in {
+    background: grey;
+    width: 100%;
+}
+/*create table*/
+#createTABLE .modal-dialog .modal-content {
+    width: 650px;
+    height: 290px;
+    padding: 10px;
+} 
+/* create ol/ul */
+#createOL .modal-dialog, #createUL .modal-dialog {
+    width: 400px;
+}
+#create-ol, #create-ul {
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+#buttons-ol, #buttons-ul, #buttons-table {
+    display: flex;
+    justify-content: space-around;
+}
+#buttons-ol > *, #buttons-ul > * {
+    width: 49%;
+}
+/* js classes*/
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
