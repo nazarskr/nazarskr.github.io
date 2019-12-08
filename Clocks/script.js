@@ -16,12 +16,12 @@ setInterval(() => {
     getEl('#date').innerHTML = `${day} . ${month} . ${year}`
     getEl('#clock').innerHTML = `${hour}:${minute}:${second}`;
 }) 
-//stopwatch let
+//stopwatch vars
 let hh = 0; 
 let mm = 0;
 let ss = 0;
 let ms = 0;
-//timer let
+//timer vars
 let min = 0;
 let sec = 0;
 function correctView() {
@@ -78,6 +78,7 @@ getEl('#stopwatch-reset').addEventListener('click', function() {
     correctView();
     getEl('#stopwatch-value').innerHTML = `${hh}:${mm}:${ss}:${ms}`;
     getEl('#loop-value').innerHTML = '';
+    clearInterval(stopwatchOn);
 })
 getEl('#stopwatch-loop').addEventListener('click', function() {
     let p = document.createElement('p');
