@@ -20,9 +20,10 @@ body {
 }
 #word {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 #word input[type='button']{
     width: 32px;
@@ -59,10 +60,10 @@ body {
 }
 /*buttons*/
 #edit-button {
-    background: url('images/html-tag.png');
+    background-image: url('images/html-tag.png');
 }
 #bold {
-    background: url('images/bold.png');
+    background-image: url('images/bold.png');
 }
 #italic {
     background-image: url('images/italic.png');
@@ -74,7 +75,7 @@ body {
     background-image: url('images/strikethrough-text.png');
 }
 #left {
-    background: url('images/alignleft.png');
+    background-image: url('images/alignleft.png');
 }
 #center {
     background-image: url('images/aligncenter.png');
@@ -285,4 +286,45 @@ main {
 }
 .italic {
     font-style: italic;
+}
+@media (max-width: 1000px) {
+    /*create table*/
+    #createTABLE .modal-dialog .modal-content {
+        height: auto;
+    }
+}
+@media (max-width: 700px) {
+    #header {
+        height: 100px;
+    }
+    main {
+        margin-top: 100px;
+    }
+    /*sign in*/
+    #signIN .modal-dialog {
+        width: 400px;
+    }
+    #signin-mod {
+        width: 300px;
+    }
+    /*create table*/
+    #createTABLE .modal-dialog .modal-content {
+        width: 400px;
+    }
+    /* create ol/ul */
+    #createOL .modal-dialog, #createUL .modal-dialog {
+        width: 400px;
+    }
+    #create-ol, #create-ul {
+        width: 400px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    #buttons-ol, #buttons-ul, #buttons-table {
+        display: flex;
+        justify-content: space-around;
+    }
+    #buttons-ol > *, #buttons-ul > * {
+        width: 49%;
+    }
 }
