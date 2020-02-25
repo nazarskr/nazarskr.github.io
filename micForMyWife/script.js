@@ -45,7 +45,6 @@ function loop() {
 function mute() {
     gainElem.value = 0;
     gainNode.gain.value = 0;
-    console.log(gainNode.gain.value);
 };
 function stop() {
     location.reload();
