@@ -74,7 +74,9 @@ p {
 }
 .divider {
     overflow: hidden;
+    text-overflow: clip;
     padding: 3px 0;
+    height: 1rem;
 }
 h1 {
     line-height: 2rem;
