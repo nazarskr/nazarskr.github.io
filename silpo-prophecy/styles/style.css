@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "5by7";
+    src: '../fonts/5by7.ttf';
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: '5by7';
+}
+p {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#receipt {
+    width: 250px;
+    padding: 0 5px;
+    margin: 20px auto;
+}
+#logo #button,  #logo #preventRepeat {
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    color: blue;
+    background-color: orange;
+    font-size: 12px;
+    text-align: center;
+    margin: 1rem auto;
+    cursor: pointer;
+    line-height: 0.8rem;
+    text-transform: uppercase;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+#logo #preventRepeat {
+    display: none;
+}
+#header .center {
+    display: block;
+    text-align: center;
+}
+#header {
+    padding-bottom: 1rem;
+}
+#prophecy {
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+#prophecyText {
+    text-transform: uppercase;
+    line-height: 1.2rem;
+}
+#cashier {
+    line-height: 1.1rem;
+}
+#sum p span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+.divider {
+    overflow: hidden;
+    padding: 3px 0;
+}
+h1 {
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
