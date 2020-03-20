@@ -1,6 +1,14 @@
 @font-face {
     font-family: "5by7";
-    src: '../fonts/5by7.ttf';
+    src: url("../fonts/5by7.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/5by7.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("../fonts/5by7.otf") format("opentype"), /* Open Type Font */
+        url("../fonts/5by7.svg") format("svg"), /* Legacy iOS */
+        url("../fonts/5by7.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("../fonts/5by7.woff") format("woff"), /* Modern Browsers */
+        url("../fonts/5by7.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
 }
 * {
     box-sizing: border-box;
