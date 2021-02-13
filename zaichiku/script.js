@@ -18,6 +18,5 @@ question.addEventListener('click', () => {
     answer.innerHTML = 'Сумочка!';
     question.setAttribute('class', 'decrease');
     answer.setAttribute('class', 'increase');
-    question.removeEventListener('click');
   }, 3000);
 });
