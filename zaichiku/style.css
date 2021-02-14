@@ -5,8 +5,9 @@
     font-family: 'Lobster', cursive;
 }
 
+/*main block*/
+
 .container {
-    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -65,12 +66,22 @@
     }
 }
 
+/*fixed block*/
+
+#fixed-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .9);
+}
+
 #trigger-button {
     width: 300px;
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-150px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,13 +95,25 @@
     text-align: center;
     border: 10px solid orange;
     border-radius: 200px;
-    display: none;
 }
 
 #answer {
     padding: 50px 0;
     font-size: 50px;
     text-align: center;
+}
+
+#close {
+    font-size: 54px;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    text-align: center;
+    color: red;
+    border: 4px solid red;
+    position: absolute;
+    top: 40px;
+    right: 40px;
 }
 
 .increase {
