@@ -1,3 +1,22 @@
+html, body {
+    height: 100%;
+}
+
 body {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    display: block;
+    padding: 5px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: darkred;
+}
+
+a:hover {
+    color: goldenrod;
 }
