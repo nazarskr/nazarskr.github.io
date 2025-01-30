@@ -158,7 +158,9 @@ const prophecyField = document.getElementById('prophecyText');
 
 button.addEventListener('click', () => {
     let random = Math.floor(Math.random() * prophecies.length);
-    prophecyField.innerHTML = prophecies[random];
+    const newProphecy =  prophecies[random];
+    prophecyField.innerHTML = newProphecy;
+    console.log(newProphecy);
     preventRepeat.setAttribute('style', 'display: block');
     button.setAttribute('style', 'display: none');
 })
